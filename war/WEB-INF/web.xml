@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>com.sociogram.server.controllers.LoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LogoutController</servlet-name>
+		<servlet-class>com.sociogram.server.controllers.LogoutController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutController</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ProfileController</servlet-name>
+		<servlet-class>com.sociogram.server.controllers.ProfileController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProfileController</servlet-name>
+		<url-pattern>/profile</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SignupController</servlet-name>
+		<servlet-class>com.sociogram.server.controllers.SignupController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignupController</servlet-name>
+		<url-pattern>/signup</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MediaUploadController</servlet-name>
+		<servlet-class>com.sociogram.server.controllers.MediaUploadController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MediaUploadController</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+  <servlet>
+    <servlet-name>MediaDownloadController</servlet-name>
+    <servlet-class>com.sociogram.server.controllers.MediaDownloadController</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>MediaDownloadController</servlet-name>
+    <url-pattern>/serve</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LikesController</servlet-name>
+    <servlet-class>com.sociogram.server.controllers.LikesController</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>LikesController</servlet-name>
+    <url-pattern>/like</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CommentsController</servlet-name>
+    <servlet-class>com.sociogram.server.controllers.CommentsController</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>CommentsController</servlet-name>
+    <url-pattern>/comment</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>MediaTrashController</servlet-name>
+    <servlet-class>com.sociogram.server.controllers.MediaTrashController</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>MediaTrashController</servlet-name>
+    <url-pattern>/remove</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PopularPhotosController</servlet-name>
+    <servlet-class>com.sociogram.server.controllers.PopularPhotosController</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>PopularPhotosController</servlet-name>
+    <url-pattern>/popular_photos</url-pattern>
+  </servlet-mapping>
+
+  
+</web-app>

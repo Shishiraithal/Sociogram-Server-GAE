@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+  <cron>
+    <url>/popular_photos</url>
+    <description>Updates "Popular Photos" kind, every 24 hours!</description>
+    <schedule>every 24 hours synchronized</schedule>
+  </cron>
+</cronentries>
